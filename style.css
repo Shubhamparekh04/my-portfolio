@@ -1,0 +1,669 @@
+/*--------------------------------------------------------------
+                         # General
+--------------------------------------------------------------*/
+
+::-webkit-scrollbar {
+    height: 0px !important;
+    width: 0px !important;
+    display: none !important;
+}
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+.main {
+    position: relative;
+    height: 200vh;
+}
+
+
+/* common all cards bg color/  position */
+.main>div~div {
+    background-color: #000000b3;
+    position: absolute;
+    margin-top: 120px;
+    width: 100%;
+    z-index: 0;
+}
+
+.container {
+    padding-left: 0;
+}
+
+
+
+/* deafult color transperancy position of body */
+
+
+
+body {
+    font-family: "Raleway", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+}
+
+/* setting image as background */
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("./img/bg.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+
+
+/* ********************************************************************************* */
+
+/*--------------------------------------------------------------
+                       # Card-1 Start
+--------------------------------------------------------------*/
+
+
+/* hide default modal white color */
+.modal-content {
+    background: none;
+}
+
+
+/* Adding styling to header */
+#header * {
+    transition: ease-in-out 0.3s;
+    color: #fff;
+}
+
+.border-bottom {
+    border-color: #18d26e !important;
+}
+
+
+#header .social-links a {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+#header .social-links a:hover {
+    background: #18d26e;
+}
+
+
+/* on hover underline */
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    height: 2px;
+    width: 100%;
+    background-color: #18d26e;
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    opacity: 0;
+    transition: all ease 1s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
+
+/*--------------------------------------------------------------
+                       # Card-1 End
+--------------------------------------------------------------*/
+
+/* ********************************************************************************* */
+
+/* ------------------------------------------------------------
+                         # Navbar
+---------------------------------------------------------------- */
+
+body>nav {
+    background-color: #010101;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------
+                        # Navbar End
+---------------------------------------------------------------- */
+
+/* ********************************************************************************* */
+
+
+
+/*--------------------------------------------------------------
+                          # About card-2
+--------------------------------------------------------------*/
+
+/* About title styling */
+.section-title h2 {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: rgb(170, 170, 170);
+    font-family: Poppins, sans-serif;
+}
+
+/* Green line beside about */
+.section-title h2::after {
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: rgb(76, 235, 149);
+    margin: 4px 10px;
+}
+
+/* About section Learn more about me */
+.section-title p {
+    margin: -15px 0px 15px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+}
+
+.about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: rgb(24, 210, 110);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway, sans-serif;
+}
+
+.about-me .content ul li {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.bi-chevron-right::before {
+    content: "";
+}
+
+.about-me .content ul i {
+    font-size: 16px;
+    margin-right: 5px;
+    color: rgb(24, 210, 110);
+    line-height: 0;
+}
+
+
+.counts {
+    padding: 30px;
+}
+
+.counts .count-box {
+    padding: 30px 30px 25px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+.counts .count-box i {
+    position: absolute;
+    top: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    color: rgb(24, 210, 110);
+    border-radius: 50px;
+    line-height: 0;
+}
+
+.counts .count-box span {
+    font-size: 36px;
+    display: block;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.counts .count-box p {
+    padding: 0px;
+    margin: 0px;
+    font-family: Raleway, sans-serif;
+    font-size: 14px;
+}
+
+/* skills */
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0px;
+}
+
+.skills .progress .skill {
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+}
+
+.skills .progress .skill .val {
+    float: right;
+    font-style: normal;
+}
+
+.skills .progress-bar-wrap {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.skills .progress-bar {
+    width: 1px;
+    height: 10px;
+    transition: all 2s ease 0s;
+    background-color: rgb(24, 210, 110);
+}
+
+
+.interests .icon-box {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    transition: ease-in-out 0.3s;
+}
+
+.interests .icon-box i {
+    font-size: 32px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.interests .icon-box h3 {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 16px;
+    color: #fff;
+}
+
+/*--------------------------------------------------------------
+                        # About card-2 End
+--------------------------------------------------------------*/
+
+/* ********************************************************************************* */
+
+/*--------------------------------------------------------------
+                        # Resume card-3 Start
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+}
+
+.resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+    padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+    padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+    padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #18d26e;
+    border: 2px solid #18d26e;
+}
+
+/*--------------------------------------------------------------
+                        # Resume card-3 End
+--------------------------------------------------------------*/
+
+/* ********************************************************************************* */
+
+
+
+/*--------------------------------------------------------------
+                        # Portfolio card-4 start
+--------------------------------------------------------------*/
+
+
+
+
+.portfolio #portfolio-flters li.filter-active {
+    background: #18d26e;
+}
+
+.portfolio #portfolio-flters li:last-child {
+    margin-right: 31px !important;
+}
+
+.portfolio .portfolio-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* on hover link & text show about projects */
+.portfolio .portfolio-wrap::before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    left: 30px;
+    right: 30px;
+    top: 30px;
+    bottom: 30px;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+}
+
+
+/* on hover card, white corner angle bracket to create  */
+.portfolio .portfolio-wrap .portfolio-info::before {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+
+.portfolio .portfolio-wrap .portfolio-info::after {
+    display: block;
+    content: "";
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    transition: all 0.5s ease 0s;
+    z-index: 9994;
+}
+
+
+
+.portfolio .portfolio-wrap .portfolio-info p {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+
+.portfolio .portfolio-wrap .portfolio-links a {
+    color: #fff;
+    font-size: 28px;
+    transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+    color: #63eda3;
+}
+
+
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+    opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::before {
+    top: 15px;
+    left: 15px;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info::after {
+    bottom: 15px;
+    right: 15px;
+}
+
+
+
+
+/*--------------------------------------------------------------
+                        # Portfolio card-4 End
+--------------------------------------------------------------*/
+
+
+/* ********************************************************************************* */
+
+
+
+/*--------------------------------------------------------------
+                        # Contact card-5 start
+--------------------------------------------------------------*/
+
+.contact .info-box {
+    color: #444444;
+    padding: 20px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+
+
+.contact .info-box i.bi-geo-alt,
+.info-box>i.bi-envelope,
+.info-box>i.bi-share,
+.info-box>i.bi-telephone {
+    font-size: 24px;
+    color: #18d26e;
+    border-radius: 50%;
+    padding: 7px 13px !important;
+    float: left;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+.contact .info-box h3 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: 10px 0 8px 68px;
+}
+
+.contact .info-box p {
+    padding: 0;
+    color: #fff;
+    line-height: 24px;
+    font-size: 14px;
+    margin: 0 0 0 68px;
+}
+
+.contact .info-box .social-links {
+    margin: 5px 0 0 68px;
+    display: flex;
+}
+
+.contact .info-box .social-links a {
+    font-size: 25px;
+    display: inline-block;
+    color: #fff;
+    line-height: 1;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.contact .info-box .social-links a:hover {
+    color: #18d26e;
+}
+
+.contact .email-form {
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.contact .email-form .error-message br+br {
+    margin-top: 25px;
+}
+
+
+.contact .email-form .loading {
+    display: none;
+    background: rgba(255, 255, 255, 0.08);
+    text-align: center;
+    padding: 15px;
+}
+
+.contact .email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    animation: animate-loading 1s linear infinite;
+}
+
+.contact .email-form input,
+.contact .email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: #fff;
+}
+
+.contact .email-form input:focus,
+.contact .email-form textarea:focus {
+    background-color: rgba(255, 255, 255, 0.11);
+}
+
+.contact .email-form input::-moz-placeholder,
+.contact .email-form textarea::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.contact .email-form input::placeholder,
+.contact .email-form textarea::placeholder {
+    color: rgba(255, 255, 255, 0.3);
+    opacity: 1;
+}
+
+.contact .email-form input {
+    padding: 10px 15px;
+}
+
+.contact .email-form textarea {
+    padding: 12px 15px;
+}
+
+.contact .email-form button[type=submit] {
+    background: #18d26e;
+    border: 0;
+    padding: 10px 30px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 4px;
+}
+
+.contact .email-form button[type=submit]:hover {
+    background: #15bb62;
+}
+
+
+/*--------------------------------------------------------------
+                        # Contact card-5 End
+--------------------------------------------------------------*/

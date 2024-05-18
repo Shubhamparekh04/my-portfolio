@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shubham's portfolio</title>
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Font Awesome CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300;1,300&display=swap"
+        rel="stylesheet">
+
+    <!--Counter CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.js"
+        integrity="sha512-brrjTp9G6MkKX5QjXwwAQkscfFpKi3okjyZ/M3vGwwg9qI1msoz7z+EbQBLXsTnVK3POjYBGHcQvX34GFKr/7A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Pointer CSS Link -->
+
+    <link rel="stylesheet" href="./pointer/pointer.css">
+
+
+    <!-- Headline CSS CDN -->
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/css/jquery.animatedheadline.min.css">
+
+    <!-- Local CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg position-fixed w-100 z-1">
+        <div class="container-fluid">
+
+            <a class="navbar-brand d-none d-md-block py-3 fs-2 fw-bolder" href="#home">Shubham Parekh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center d-flex gap-4">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#" for="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" for="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" for="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" for="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" for="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Navbar End-->
+
+
+
+    <!-- Main container -->
+    <div class="container main">
+
+
+
+
+
+        <!--------------------------------------------------
+            # Card-1 start (Home) Modal
+        ---------------------------------------------------->
+        <div class="modal fade show" id="exampleModalFullscreen" tabindex="-1" style="display: block;" id="home">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content">
+
+                    <div class="modal-body d-flex align-items-center">
+
+                        <!-- Header -->
+                        <header id="header" class="p-lg-5 text-center text-sm-start">
+
+                            <div class="container p-lg-5 selector">
+
+                                <h1 class="ah-headline">
+                                    <a href="index.html" class="text-decoration-none display-2 ">Shubham
+                                        <span class="text-warning ah-words-wrapper">
+                                            <b class="is-visible">Parekh</b>
+                                            <b>Developer</b>
+                                            <b>Web Designer</b>
+                                        </span>
+                                    </a>
+                                </h1>
+                                <h2>I'm a passionate<span class="text-warning">&#128498;</span> <span
+                                        class="border-bottom border-3">Fullstack
+                                        Web Developer
+                                    </span> from Gujarat, India</h2>
+
+                                <!-- Navbar -->
+                                <nav id="navbar" class="navbar justify-content-center justify-content-sm-start">
+                                    <ul class="list-unstyled list-inline  d-flex gap-4">
+                                        <li class="list-inline-item"><a class=" nav-link" href="#header"
+                                                for="#home">Home</a>
+                                        </li>
+                                        <li class="list-inline-item"><a class="nav-link" href="#about"
+                                                for="#about">About</a>
+                                        </li>
+                                        <li class="list-inline-item"><a class="nav-link" href="#resume"
+                                                for="#resume">Resume</a></li>
+                                        <li class="list-inline-item"><a class="nav-link" href="#portfolio"
+                                                for="#portfolio">Portfolio</a>
+                                        </li>
+                                        <li class="list-inline-item"><a class="nav-link" href="#contact"
+                                                for="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <!-- <i class="bi mobile-nav-toggle bi-list"></i> -->
+                                </nav>
+                                <!-- End Navbar -->
+
+                                <div class="social-links d-flex justify-content-center justify-content-sm-start">
+                                    <a href="https://x.com/Sparekh04" target="_blank" class="twitter"><i
+                                            class="bi bi-twitter"></i></a>
+                                    <a href="https://www.facebook.com/shubham.parekh.33" target="_blank"
+                                        class="facebook"><i class="bi bi-facebook"></i></a>
+                                    <a href="https://www.instagram.com/shubham__parekh/" target="_blank"
+                                        class="instagram"><i class="bi bi-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/shubham-parekh-937b1a2b1/" target="_blank"
+                                        class="linkedin"><i class="bi bi-linkedin"></i></a>
+                                </div>
+
+                            </div>
+                        </header>
+                        <!-- End Header -->
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------
+            # End Card-1 (Home) 
+        ---------------------------------------------------->
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!--------------------------------------------------
+            # Card-2 (About) start 
+        ---------------------------------------------------->
+        <div id="about" class="about section-show px-3 py-5">
+
+            <!-- ======= About Me ======= -->
+            <div class="about-me container">
+
+                <div class="section-title">
+                    <h2 class="p-0">ABOUT</h2>
+                    <p>LEARN MORE ABOUT ME</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4" data-aos="fade-right">
+                        <img src="./img/mypic.png" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+                        <h3>Fullstack Developer</h3>
+                        <p class="fst-italic">
+
+                            Hey there! I'm Shubham, a Fullstack Web developer with a knack for turning Coffee into code
+                            and ideas
+                            into interactive experiences.
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Birthday: </strong> <span>&nbsp19
+                                            Nov
+                                            1996</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Website: </strong>
+                                        <span><a href="https://github.com/Shubhamparekh04"
+                                                class="text-decoration-none text-light"
+                                                target="_blank">&nbspShubham/Github</a>
+                                        </span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>&nbsp+91 80008
+                                            54404</span></li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>&nbspNavsari,
+                                            Gujarat</span></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-6">
+                                <ul>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>&nbsp27</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>
+                                            &nbspMaster</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong>
+                                        <span>&nbspshubhamparekh04@gmail.com</span>
+                                    </li>
+                                    <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong>
+                                        <span>&nbspAvailable</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="my-0">
+                            Armed with HTML, CSS, and JavaScript, I'm on a mission to conquer the digital world, one
+                            pixel at a time.While I may be fresh in the industry, my enthusiasm for web development is
+                            as strong as my Coffee game. I'm like a sponge, soaking up knowledge faster than you can say
+                            "viewport meta tag."When I'm not glued to my screen, you'll find me exploring the latest
+                            tech trends, brainstorming new project ideas, or attempting to solve coding puzzles (with
+                            varying degrees of success).Let's team up and create some web magic together – with a side
+                            of witty comments &#x1F609; and perfectly placed semicolons!
+                        </p>
+                    </div>
+                </div>
+
+            </div><!-- End About Me -->
+
+            <!-- ======= Counts ======= -->
+            <div class="counts container">
+
+                <div class="row">
+
+
+                    <div class="col-lg-3 col-md-6 mt-5 mt-md-0 mx-auto text-center">
+                        <div class="count-box">
+                            <i class="bi bi-journal-richtext"></i>
+                            <span data-purecounter-start="0" data-purecounter-end="06" data-purecounter-duration="10"
+                                class="purecounter" id="counter">05</span>
+                            <p>Projects</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div><!-- End Counts -->
+
+            <!-- ======= Skills  ======= -->
+            <div class="skills container">
+
+                <div class="section-title">
+                    <h2>Skills</h2>
+                </div>
+
+                <div class="row skills-content">
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">HTML <i class="val">100%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 100%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">CSS <i class="val">90%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">JavaScript <i class="val">75%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">jQuery <i class="val">80%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 80%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">Github <i class="val">30%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="30" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 30%;"></div>
+                            </div>
+                        </div>
+
+                        <div class="progress">
+                            <span class="skill py-2 m-0">VS Code <i class="val">55%</i></span>
+                            <div class="progress-bar-wrap">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0"
+                                    aria-valuemax="100" style="width: 55%;"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div><!-- End Skills -->
+
+            <!-- ======= Interests ======= -->
+            <div class="interests container mt-5">
+
+                <div class="section-title">
+                    <h2>Interests</h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-md-4">
+                        <div class="icon-box">
+                            <i class="bi bi-app-indicator" style="color: #ffbb2c;"></i>
+                            <h3>Technology and Innovation</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-book-half" style="color: #5578ff;"></i>
+                            <h3>Reading and Learning</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+                        <div class="icon-box">
+                            <i class="bi bi-controller" style="color: #e80368;"></i>
+                            <h3>Gaming</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+                        <div class="icon-box">
+                            <i class="bi bi-pencil-fill" style="color: #e361ff;"></i>
+                            <h3>Sketching</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-luggage-fill" style="color: #47aeff;"></i>
+                            <h3>Traveling</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-camera2" style="color: #ffa76e;"></i>
+                            <h3>Photography</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-music-note-beamed" style="color: #11dbcf;"></i>
+                            <h3>Music</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-film" style="color: #4233ff;"></i>
+                            <h3>Movies</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-puzzle" style="color: #b2904f;"></i>
+                            <h3>Problem Solving</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-filetype-js" style="color: #b20969;"></i>
+                            <h3>Web Development</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-bicycle" style="color: #ff5828;"></i>
+                            <h3>Cycling</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-4 mt-4">
+                        <div class="icon-box">
+                            <i class="bi bi-triangle-fill" style="color: #29cc61;"></i>
+                            <h3>Tracking</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- End Interests -->
+
+        </div>
+        <!--------------------------------------------------
+            # Card-2 (About) End 
+        ---------------------------------------------------->
+
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!--------------------------------------------------
+            # Card-3 (Resume) Start 
+        ---------------------------------------------------->
+
+        <div id="resume" class="resume section-show p-5">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Resume</h2>
+                    <p>Check My Resume</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Summary</h3>
+                        <div class="resume-item pb-0">
+                            <h4>Red & White Multimedia Education - Navsari</h4>
+                            <h5>2024 - Pursuing</h5>
+                            <p><em>I am currently pursuing an intensive Full Stack Development program at Red & White
+                                    Multimedia Education in Navsari. This comprehensive course provides in-depth
+                                    training in both front-end and back-end technologies, including HTML, CSS,
+                                    JavaScript, React, Node.js, and MongoDB. Through hands-on projects, I am developing
+                                    the skills necessary to design, develop, and maintain sophisticated web
+                                    applications. This program is equipping me with the technical expertise and
+                                    practical experience to effectively contribute to professional development teams and
+                                    address real-world challenges in web development.</em></p>
+                            <p>
+                            </p>
+                            <ul>
+                                <li>RNW Multimedia Education - Navsari</li>
+                                <li>+(91) 94848 42425</li>
+                                <li>info@rnwmultimedia.com</li>
+                            </ul>
+                            <p></p>
+                        </div>
+
+                        <h3 class="resume-title">Education</h3>
+                        <div class="resume-item">
+                            <h4>MBA in Maritime Management</h4>
+                            <h5>2019 - 2021</h5>
+                            <p><em>B.K.School Of Maritime Management, Ahmedabad</em></p>
+                            <p>My MBA in Maritime Management and Full Stack Development training together offer a unique
+                                blend of strategic business insight and technical expertise. This combination enables me
+                                to create innovative solutions, bridge the gap between technical and business teams, and
+                                drive digital transformation. My versatile skill set makes me a valuable asset for
+                                tackling complex challenges and delivering impactful results.</p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>Bachelor of Computer Application - BCA</h4>
+                            <h5>2014 - 2017</h5>
+                            <p><em>Naranlala college of professional & applied sciences, Navsari.</em></p>
+                            <p>Incorporating my Bachelor of Computer Applications (BCA) degree into my ongoing Full
+                                Stack Development studies at Red & White Multimedia Education, I'm equipped with a
+                                robust academic foundation and practical coding skills. This blend of theoretical
+                                knowledge and hands-on experience positions me as a capable and adaptable candidate
+                                poised to excel in the dynamic field of technology.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="resume-title">Professional Experience</h3>
+                        <div class="resume-item">
+                            <h4>Operations Executive</h4>
+                            <h5>2023</h5>
+                            <p><em>UNITED MARINE PTE LTD.(SINGAPORE)</em></p>
+                            <p>
+                            </p>
+                            <ul>
+                                <li>Handling clean petroleum products (CPP) post fixtures part.</li>
+                                <li>Co-ordinate between Vessel owner/Charterer/Load Port-Discharge Port
+                                    agents in accordance with international time zone.</li>
+                                <li>Keep track of multiple Tanker Vessels and handling operational issues 24
+                                    X7.</li>
+                                <li>Prepare charter party contract / Letter of indemnity (Legal contracts).</li>
+                                <li>Prepare Brokerage Commission invoice.</li>
+                                <li>Keep tracking of pending claim or commission / chasing Owners and
+                                    Charterers for the same.</li>
+                            </ul>
+                            <p></p>
+                        </div>
+                        <div class="resume-item">
+                            <h4>EXPORT MARKETING EXECUTIVE</h4>
+                            <h5>2022</h5>
+                            <p><em>ALLTEX EXIM (SHREE KRISHNA
+                                    AGENCY), SURAT-GUJARAT</em></p>
+                            <p>
+                            </p>
+                            <ul>
+                                <li>Identify and organize Potential buyers through online channels.</li>
+                                <li>Corresponding with and contacting international buyers via mail and
+                                    telephone.</li>
+                                <li>Collecting client requirements and obtaining supplier quotations.</li>
+                                <li>Quote to the buyer and engaging in further negotiation.</li>
+                                <li>Generate Proforma invoice sending buyer to initiate business.</li>
+                                <li>Advance payment & LC draft follow-up from client</li>
+                                <li>Container stuffing</li>
+                                <li>Proceeding advance payment to suppliers in coordination of finance
+                                    department & share Swift copy.</li>
+                                <li>Arrange balance payment to supplier & share swift copy.</li>
+                                <li>Arrange DO for pickup imported containers.</li>
+
+                            </ul>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--------------------------------------------------
+            # Card-3 (Resume) End 
+        ---------------------------------------------------->
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <!--------------------------------------------------
+            # Card-4 (portfolio) Start 
+        ---------------------------------------------------->
+        <div id="portfolio" class="portfolio section-show p-5">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>My Works</p>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center">
+                        <ul id="portfolio-flters">
+                            <li data-filter=".filter-web" class="filter-active btn btn-success mx-auto">Web</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row portfolio-container" style="position: relative">
+
+                    <!-- Aurora travels -->
+                    <div class="  col-lg-6 mb-5  filter-web">
+
+
+                        <div class="portfolio-wrap">
+
+                            <img src="./portfolio-img/2-aurora.png" class="img-fluid img-thumbnail" alt="">
+                            <div class="portfolio-info">
+                                <h4>Aurora Tours</h4>
+                                <p>I created a responsive, visually appealing website for Aurora Tours using Bootstrap.
+                                </p>
+                                <div class="portfolio-links">
+                                    <a href="https://auroratours.netlify.app/" data-gallery="portfolioDetailsGallery"
+                                        data-glightbox="type: external" target="_blank" title="Portfolio Details"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- portfolio card -->
+                    <div class="col-lg-6 mb-5 filter-web">
+
+
+                        <div class="portfolio-wrap">
+
+                            <img src="./portfolio-img/1-portfolio.png" class="img-fluid img-thumbnail" alt="">
+                            <div class="portfolio-info">
+                                <h4>Portfolio</h4>
+                                <p>My Portfolio with only use of CSS and jQuery plugins.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://shubhamportfolio04.netlify.app/"
+                                        data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                                        target="_blank" title="Portfolio Details"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Geek for Geeks -->
+                    <div class=" col-lg-6 mb-5 filter-web">
+
+
+                        <div class="portfolio-wrap">
+
+                            <img src="./portfolio-img/3-geek.png" class="img-fluid img-thumbnail" alt="">
+                            <div class="portfolio-info">
+                                <h4>Geek For Geeks: Clone</h4>
+                                <p>I built a basic website called Geek for Geek clone using HTML and CSS.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://preeminent-sunburst-5c7ed4.netlify.app/"
+                                        data-gallery="portfolioDetailsGallery" data-glightbox="type: external"
+                                        target="_blank" title="Portfolio Details"><i class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Tin-Dog -->
+                    <div class="col-lg-6 mb-5 filter-web">
+
+
+                        <div class="portfolio-wrap">
+
+                            <img src="./portfolio-img/4-tindog.png" class="img-fluid img-thumbnail" alt="">
+                            <div class="portfolio-info">
+                                <h4>Tin Dog</h4>
+                                <p>Tin Dog, a Bootstrap-powered dating website for dogs.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://tindog04.netlify.app/" data-gallery="portfolioDetailsGallery"
+                                        data-glightbox="type: external" target="_blank" title="Portfolio Details"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Admin panel -->
+                    <div class="col-lg-6 mx-lg-auto  mb-5 filter-web">
+
+
+                        <div class="portfolio-wrap">
+
+                            <img src="./portfolio-img/5-adminpanel.png" class="img-fluid img-thumbnail" alt="">
+                            <div class="portfolio-info">
+                                <h4>Admin Panel</h4>
+                                <p>Basic Admin panel interface using jQuery, HTML, and CSS.</p>
+                                <div class="portfolio-links">
+                                    <a href="https://admin-panel04.netlify.app/" data-gallery="portfolioDetailsGallery"
+                                        data-glightbox="type: external" target="_blank" title="Portfolio Details"><i
+                                            class="bi bi-link-45deg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <!--------------------------------------------------
+            # Card-5 (portfolio) End 
+        ---------------------------------------------------->
+
+        <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+        <!--------------------------------------------------
+            # Card-5 (Contact) Start 
+        ---------------------------------------------------->
+
+        <div id="contact" class="contact section-show px-3 py-5">
+            <div class="container">
+
+                <div class="section-title">
+                    <h2>Contact</h2>
+                    <p>Contact Me</p>
+                </div>
+
+                <div class="row mt-2">
+
+                    <div class="col-md-6 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bi bi-geo-alt"></i>
+                            <h3>My Address</h3>
+                            <p>B-501, Srushti Apt. Opp Zudio, Lunsikui, Navsari-396445, Gujarat.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bi bi-share"></i>
+                            <h3>Social Profiles</h3>
+                            <div class="social-links">
+                                <a href="https://x.com/Sparekh04" target="_blank" class="twitter"><i
+                                        class="bi bi-twitter"></i></a>
+                                <a href="https://www.facebook.com/shubham.parekh.33" target="_blank" class="facebook"><i
+                                        class="bi bi-facebook"></i></a>
+                                <a href="https://www.instagram.com/shubham__parekh/" target="_blank"
+                                    class="instagram"><i class="bi bi-instagram"></i></a>
+                                <a href="https://www.linkedin.com/in/shubham-parekh-937b1a2b1/" target="_blank"
+                                    class="linkedin"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bi bi-envelope"></i>
+                            <h3>Email Me</h3>
+                            <p>shubhamparekh04@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 d-flex align-items-stretch">
+                        <div class="info-box">
+                            <i class="bi bi-telephone"></i>
+                            <h3>Call Me</h3>
+                            <p>+91 80008 54404</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" method="" role="form" class="email-form mt-4">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
+                                required="">
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                                required="">
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                            required="">
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea class="form-control" name="message" rows="5" placeholder="Message"
+                            required=""></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading">Loading</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class=" py-4 d-flex justify-content-center">
+                        <iframe
+                            src="https://www.google.com/maps/d/embed?mid=1ATpD2v63NeLKBKhXKX5YVtsIFzovxGY&ehbc=2E312F"
+                            width="100%" height="480"></iframe>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                </form>
+
+            </div>
+        </div>
+
+        <!--------------------------------------------------
+            # Card-5 (Contact) End 
+        ---------------------------------------------------->
+
+
+    </div>
+
+
+
+
+    <!-- Bootstrap JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN  -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- jquery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.js"></script>
+
+
+    <!-- Counter Script -->
+    <script src="./counter/counter.js"></script>
+
+
+    <!-- Pointer Script -->
+    <script src="./pointer/pointer.js"></script>
+
+
+    <!-- Headline JS CDN -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/jquery-animated-headlines@1.0.0/dist/js/jquery.animatedheadline.min.js"></script>
+
+    <!-- Local jQuery file -->
+    <script src="./jquery.js"></script>
+
+
+</body>
+
+</html>
